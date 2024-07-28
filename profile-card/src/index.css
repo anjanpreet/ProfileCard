@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  margin-top: 50px;
+}
+
+#profile-card {
+  width: 300px;
+  min-height: 500px;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+#profile-photo {
+  width: 100%;
+  height: 150px;
+  background-image: url("https://www.shutterstock.com/image-photo/image-happy-office-guy-30s-260nw-1110306665.jpg");
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#profile-summary {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+#skill {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  text-align: center;
+  vertical-align: center;
+  border: 2px solid black;
+  margin-bottom: 2px;
+  padding: 2px;
+}
+
+#skill p {
+  margin: 0;
+}
+#skills {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#emoji {
+  font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin-top: 150px;
+  }
+}
